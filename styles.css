@@ -13,11 +13,17 @@ body {
         rgb(195, 221, 229) 0%,
         rgb(47, 93, 97) 100%
     );
-    height: 700px;
+    height: 755px;
     width: auto;
     align-items: center;
     justify-content: center;
 }
+
+.headerContainer{
+    font-family: 'Cascadia Code', monospace;
+    font-size: 40px;
+}
+
 
 .calContainer {
     display: flex;
@@ -32,9 +38,11 @@ body {
     background-color: rgb(212, 212, 212);
     height: 100px;
     font-family: 'Cascadia Code', monospace;
-    font-size: 48px;
+    font-size: 40px;
     justify-content: right;
     align-items: center;
+    border: 1px solid black;
+
 
 }
 
@@ -42,12 +50,26 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    height: 50px;
     width: 400px;
     height: 350px;
+}
+
+.specOpButton{
+    font-family: 'Cascadia Code', monospace;
+    font-size: 20px;
+    background-color: rgb(159, 159, 159);
+    border: 1px solid black;
+}
+
+.operatorButton{
+    font-family: 'Cascadia Code', monospace;
+    font-size: 20px;
+    background-color: rgb(254, 178, 0);
+    border: 1px solid black;
 }
 
 .button{
     font-family: 'Cascadia Code', monospace;
     font-size: 20px;
+    border: 1px solid black;
 }

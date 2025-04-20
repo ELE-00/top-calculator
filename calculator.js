@@ -43,5 +43,43 @@ function calcButtons() {
     };
 };  
 
+
 //Function call to create buttons
 calcButtons();
+
+let value1 = 2;
+let value2 = 2;
+let operator = "";
+
+
+function add(value1, value2){
+    return value1 + value2
+};
+
+function substract(value1, value2){
+    return value1 - value2
+};
+
+function multiply(value1, value2){
+    return value1 * value2
+};
+
+function divide(value1, value2){
+    return value1 / value2
+};
+
+function operate(value1, operator, value2){
+    let result = "";
+
+    if (operator == "+") {
+        result = add(value1, value2);
+    }else if (operator == "-"){
+        result = substract(value1, value2);
+    }else if (operator == "*"){
+        result = multiply(value1, value2);    
+    }else if (operator == "/"){
+        result = divide(value1, value2)
+    }else { result = console.log("Invalid operator");
+    };
+    return result;
+};
